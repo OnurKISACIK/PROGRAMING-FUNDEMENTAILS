@@ -1,30 +1,35 @@
-function mining(input) {
-  let totalMoney = 0;
-  let currentDay = 1;
-  let bitcoinCOunt = 0;
-  let dayOfFirstBitcoin = 0;
+function miningOne(input) {
+  let x = input.length;
 
-  for (let goldMined of input) {
-    if (currentDay % 3 == 0) {
-      goldMined *= 0.7;
+  let bitcountCounter = 0;
+  let currentDay = input.length - 2;
+  let totalAmount = 0;
+  let firstBitcoinPurchased = "";
+  for (let i = 0; i < x; i++) {
+    let dailyGold = input[i];
+    if (currentDay % 3 === 0) {
+      dailyGold = dailyGold * 0.7;
     }
-    let moneyFromGold = goldMined * 67.51;
-    totalMoney += moneyFromGold;
+    let totalEarnedMoneyFromGOld = dailyGold * 67.51;
+    totalAmount += totalEarnedMoneyFromGOld;
 
-    while (totalMoney >= 11949.16) {
-      if (bitcoinCOunt === 0) {
-        dayOfFirstBitcoin = currentDay;
+    while (totalAmount >= 11949.16) {
+      if (bitcountCounter === 0) {
+        firstBitcoinPurchased = currentDay;
       }
 
-      bitcoinCOunt++;
-      totalMoney -= 11949.16;
+      totalAmount -= 11949.16;
     }
     currentDay++;
-    console.log(`Bought bitcoins: ${bitcoinCOunt}`);
-    if (bitcoinCOunt > 0) {
-      console.log(`Day of the first purchased bitcoin: ${dayOfFirstBitcoin}`);
+    bitcountCounter++;
+    if (bitcountCounter > 0) {
+      console.log(
+        `Day of the first purchased bitcoin: ${firstBitcoinPurchased}`
+      );
     }
-    console.log(`Left money: ${totalMoney.toFixed(2)} lv.`);
   }
+
+  console.log(`Bought bitcoins: ${bitcountCounter}`);
+  console.log(`Left money: ${totalAmount.toFixed(2)} lv.`);
 }
-mining([100, 200, 300]);
+miningOne([100, 200, 300]);
