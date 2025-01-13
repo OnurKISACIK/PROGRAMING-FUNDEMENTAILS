@@ -4,7 +4,7 @@ function mining(input) {
   let bitcoinCOunt = 0;
   let dayOfFirstBitcoin = 0;
 
-  for (let goldMined of arr) {
+  for (let goldMined of input) {
     if (currentDay % 3 == 0) {
       goldMined *= 0.7;
     }
