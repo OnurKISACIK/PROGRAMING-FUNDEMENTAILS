@@ -1,4 +1,4 @@
-function rightPlace(text, char, expText) {
+/*function rightPlace(text, char, expText) {
   let newText = text.replace("_", char);
 
   if (expText === newText) {
@@ -8,4 +8,4 @@ function rightPlace(text, char, expText) {
   }
 }
 rightPlace("Str_ng", "I", "Strong");
-rightPlace("Str_ng", "i", "String");
+rightPlace("Str_ng", "i", "String");*/

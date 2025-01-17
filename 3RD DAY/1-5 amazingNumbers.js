@@ -9,6 +9,7 @@ function amazingNumbers(num) {
   }
   // toplam sayinin 9 icerip icermemesine bakmaktayiz.
   let result = sum.toString().includes("9");
+
   // eger 9 iceriyorsa true, icermiyorsa false yazdiriyoruz.
   console.log(result ? `${num} Amazing? True` : `${num} Amazing? False`);
 }
