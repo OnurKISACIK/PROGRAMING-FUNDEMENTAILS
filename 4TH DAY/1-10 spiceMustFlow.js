@@ -1,5 +1,5 @@
 function spiceMustFlow(yeild) {
-  let spice = Math.abs(yeild);
+  let spice = Number(Math.abs(yeild));
   let consumed = 26;
   let total = 0;
   let dayCount = 0;
