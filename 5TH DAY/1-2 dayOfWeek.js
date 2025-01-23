@@ -1,4 +1,4 @@
-function dayOfWeek(number) {
+function dayOfWeek(day) {
   let days = [
     "Monday",
     "Tuesday",
@@ -9,7 +9,12 @@ function dayOfWeek(number) {
     "Sunday"
   ];
 
-  let check = number;
-  console.log(check[0]);
+  if (day <= days.length) {
+    console.log(days[day - 1]);
+  } else {
+    console.log("Invalid day!");
+  }
 }
 dayOfWeek(3);
+dayOfWeek(6);
+dayOfWeek(8);
