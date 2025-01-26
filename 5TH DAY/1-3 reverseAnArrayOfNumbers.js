@@ -10,3 +10,5 @@ function reverseAnArrayOfNumbers(n, arr) {
   console.log(reversArr.join(" "));
 }
 reverseAnArrayOfNumbers(3, [10, 20, 30, 40, 50]);
+
+// DAHA KISA YOLU YOKMU BUNUN YAW!!!
