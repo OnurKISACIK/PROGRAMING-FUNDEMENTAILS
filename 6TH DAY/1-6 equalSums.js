@@ -1,4 +1,4 @@
 function equalSums(arr) {
-    for( )
+    for(){}
 }
 equalSums([1, 2, 3, 3]);
