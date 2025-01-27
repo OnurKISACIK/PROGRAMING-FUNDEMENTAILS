@@ -1,0 +1,2 @@
+function equalSums() {}
+equalSums();
