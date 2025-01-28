@@ -11,6 +11,8 @@ function equalArray(arr1, arr2) {
       break;
     }
   }
+  if (equal) {
+  }
 }
 
 //equalArray(["10", "20", "30"], ["10", "20", "30"]);
