@@ -1,0 +1,49 @@
+BURADA OLUSTURULAN FARKLI IKI FONKSIYON SAADECE ASAGIDAKI OLUSTURULAN UC FONKSIYONUN DA CALISMASI SAGLAMAKTA
+BURDA FARKLI IKI FONKSIYONDA AYNI ISLEMLERI YAPTIRIYOR ASAGIDAKI UC FONKSIYONU KULLANARAK
+
+function solve(a, b) {
+  sum(a, b);
+  subst(a, b);
+  multply(a, b);
+}
+function solve2(a, b) {
+  sum(a, b);
+  subst(a, b);
+  multply(a, b);
+}
+
+//*************************************** */
+
+ASAGIDAKI DUZENLENMIS FONKSIYONLARI YUKARIDAKI OLUSTURULAN IKI FARKLI FONKSIYONDAN DA CAGIRIP AYNI ISLEMI YAPMASINI SAGLIYABILIRIZ.
+
+function sum(a, b) {
+  console.log(a + b);
+}
+function subst(a, b) {
+  console.log(b - a);
+}
+function multply(a, b) {
+  console.log(a * b);
+}
+solve(1, 2);
+solve2(2, 4);
+
+NOT: SOLVE FONKSIYONU ILK CAGIRILDIYERDEN BASLAR BUDA " solve (1,2)" DAHA SONRA YUKARIDA CALISTIRLARAK 
+ISLEMI BITIRDIKTEN SONRA GERI DONUP "solve2 (2,4)" UN CAGIRILMASINI TETIKLER VER SOLVE IKI FONKSIYONU 
+YUKARIDA CALISARAK YINE CAGIRILDIGI YERDE BITER. BUTUN PRENSIP BU SEKILDE CALISIR
+
+function sum(a, b) {
+  console.log(a + b);
+}
+sum(2, 3);
+
+function find(arr) {
+  console.log(arr[0] + arr[1]);
+}
+find([1, 2]);
+
+function nameLastName(arr) {
+  console.log(`${arr[0]} ${arr[1]}`);
+}
+nameLastName(["Onur", "Kisacik"]);
+
