@@ -1,0 +1,43 @@
+<html></html>      - web adresimizin bilgileri
+<head></head>      - Web sayfasinin icerigi
+<body></body>      - Butun icerik
+<footer></footer> 
+<p>                - Paragraf girilir
+
+<h1>               - mevcut bilgileri girmek icin kullanilur ENBUYUK
+<h2>               - mevcut bilgileri girmek icin kullanilur
+.
+.
+<h6></h6>          - mevcut bilgileri girmek icin kullanilur ENKUCUK
+
+<img></img>        - Resim girmek icin kullanilir
+<a> </a>           - Link girmek icin kullanilur
+
+  -----   LISTE KODLARI   -----
+
+  SIRALI LISTE :
+  <ol>
+  <li>Onur</li>
+  <li>Ahmet</li>
+  <li>Hakan</li>
+  </ol>
+
+  SIRALI LISTELERDEKI TIPLER
+  <ol type="A"></ol> - A,B,C OLARAK SIRALAMAKTA
+  <ol type="I"></ol> - I,II,III OLARAK SIRALAMAKTA
+  <ol type="1"></ol> - 1,2,3 OLARAK SIRALAMAKTA
+  <ol type="a"></ol> - a,b,c OLARAK SIRALAR
+  <ol type="i"></ol> - i, ii, iii OLARAK SIRALAMAKTADIR
+
+  SIRASIZ LISTE
+  <ul>
+  <li></li>
+  <li></li>
+  </ul>
+
+  SIRASIZ lISTELERDEKI TIPLER
+
+  <ul type="circle"></ul> - BOS YUVARLAK OLSUTURMAYA YARDIMCI OLUR
+  <ul type=disc"></ul>    - ICI DOLU YUVARLAK OLUSTURUR
+  <ul type="square"></ul> - KARE OLARAK OLUSTURMAKTA   
+  DAHA FAZLADA OLABILIR KONTROL EDEBILIRIZ.

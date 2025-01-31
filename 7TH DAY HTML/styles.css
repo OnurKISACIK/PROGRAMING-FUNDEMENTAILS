@@ -1,0 +1,32 @@
+h1 {
+    font-size: 42px;
+    color: blue;
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+    color:red;
+    text-align: right;
+}
+
+.first-class{
+    font-size: 25;
+    color:rgb(160, 117, 17);
+    text-align:center;
+}
+.second-class {
+        font-size: 50;
+        color: rgb(14, 167, 11);
+        text-align: left;
+    }
+
+.important {
+    font-size: 45;
+    color: chartreuse;
+    text-align: start;
+    }
+#important-1{
+    font-size: 45;
+    color: cornflowerblue;
+    text-align: center;
+}
