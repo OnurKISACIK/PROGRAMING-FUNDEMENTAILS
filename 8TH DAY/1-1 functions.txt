@@ -28,8 +28,8 @@ function multply(a, b) {
 solve(1, 2);
 solve2(2, 4);
 
-NOT: SOLVE FONKSIYONU ILK CAGIRILDIYERDEN BASLAR BUDA " solve (1,2)" DAHA SONRA YUKARIDA CALISTIRLARAK 
-ISLEMI BITIRDIKTEN SONRA GERI DONUP "solve2 (2,4)" UN CAGIRILMASINI TETIKLER VER SOLVE IKI FONKSIYONU 
+NOT: "solve" FONKSIYONU ILK CAGIRILDIYERDEN BASLAR BUDA " solve (1,2)" DAHA SONRA YUKARIDA CALISTIRLARAK 
+ISLEMI BITIRDIKTEN SONRA GERI DONUP "solve2" (2,4)" UN CAGIRILMASINI TETIKLER VER SOLVE IKI FONKSIYONU 
 YUKARIDA CALISARAK YINE CAGIRILDIGI YERDE BITER. BUTUN PRENSIP BU SEKILDE CALISIR
 
 function sum(a, b) {
@@ -46,4 +46,19 @@ function nameLastName(arr) {
   console.log(`${arr[0]} ${arr[1]}`);
 }
 nameLastName(["Onur", "Kisacik"]);
+
+
+=======================
+NESTED FUNCTIONS
+
+function solve (){
+    function solve2 (numA,numB){
+        return sumOfTwoNumbers(numA,numB);
+    }
+    function sumTwoNumbers(numA,numB){
+        return numA +numB
+    }
+    return solve2(1,2)
+}
+console.log(solve())
 
