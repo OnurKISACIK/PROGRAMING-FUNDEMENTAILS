@@ -12,3 +12,19 @@ function charactersInRange(char1, char2) {
 }
 
 charactersInRange("#", ":");
+
+/*
+
+function password(first, second) {
+  let char1 = first.charCodeAt();
+  let char2 = second.charCodeAt();
+
+  for (let start = char2; start >= char1; start--) {
+    let a = String.fromCharCode(start);
+    console.log(a);
+  }
+}
+
+password("d", "k");
+
+*/
