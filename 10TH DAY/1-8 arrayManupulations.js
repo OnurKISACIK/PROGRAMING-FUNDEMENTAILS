@@ -1,4 +1,3 @@
-function arrayManupulations(arr) {}
 arrayManupulations([
   "4 19 2 53 6 43",
   "Add 3",
