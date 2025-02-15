@@ -1,4 +1,43 @@
 function treasureHunt(arr) {
+  let firstItems = arr.shift().split("|");
+  console.log(firstItems);
+
+  let arrayLeft = arr.shift().split(", ");
+  console.log(arrayLeft); //['Gold', 'Silver', 'Bronze', 'Medallion', 'Cup']
+  let command1 = arrayLeft.shift().split(" ");
+  console.log(command1); //'Loot', 'Wood', 'Gold', 'Coins']
+  let command2 = command1.shift();
+  console.log(command2); // Loot
+  let hazine = command1;
+  console.log(hazine); // [ 'Wood', 'Gold', 'Coins' ]
+
+  while (command2 !== "Yohoho!") {
+    command1 = arrayLeft.shift().split(" ");
+    command2 = command1.shift();
+    hazine = command1;
+
+    if (command2 === "Loot") {
+      for (let el of hazine) {
+        if (!firstItems.includes(el)) {
+          firstItems.push(el);
+          console.log(firstItems);
+        }
+      }
+      command1 = arrayLeft.shift();
+    }
+  }
+}
+treasureHunt([
+  "Gold|Silver|Bronze|Medallion|Cup",
+  "Loot Wood Gold Coins",
+  "Loot Silver Pistol",
+  "Drop 3",
+  "Steal 3",
+  "Yohoho!"
+]);
+
+/*
+function treasureHunt(arr) {
   let loot = arr.shift().split("|");
   for (let i = 0; i < arr.length; i++) {
     let [command, ...items] = arr[i].split(" ");
@@ -41,3 +80,4 @@ treasureHunt([
   "Steal 3",
   "Yohoho!"
 ]);
+*/
